@@ -1,0 +1,46 @@
+About
+
+	testUtils is a simple set of utilities aimed at helping you test and improve the coverage of your code.
+	For the time being it is only comprised of BeanLikeTester.
+
+
+* BeanLikeTester
+
+	This class provides methods to easily and quickly test and improve the test coverage of 'bean like'
+objects (i.e. objects with setters and getters but that don't necessarily implement the Serializable 
+interface and can have non default constructors).
+  
+	The beanLike objects:
+  
+	* have a default constructor and/or constructors that only initialise properties,
+    
+	* have optional setters (setXXX()),
+    
+	* have accessors (isXXX(), getXXX()) for all the properties,
+    
+	* properties are either readonly or set by a either a constructor or a setter (or both).
+    
+    []
+ 
+	All the initial values, setters, getters, non default constructors, hashCode(), equals(), toString()
+can be automatic tested from a map of default and non default property/value.
+
+** How to use it
+
+	For example to test this simple bean:
+	
+%{include|source=src/test/java/org/outsideMyBox/testUtils/examples/MyBean.java|id=bean|show-gutter=false}
+
+	you would use instances of <<PropertiesAndValues>> and <<BeanLikeTester>> to: 
+
+%{include|source=src/test/java/org/outsideMyBox/testUtils/examples/ExampleTest.java|id=snippet1|show-gutter=false}
+
+
+	Now, if you want to test an object that defines non default constructors that only set properties, e.g.:
+
+%{include|source=src/test/java/org/outsideMyBox/testUtils/examples/MyBeanLike.java|id=beanLike|show-gutter=false}
+
+	you would first use <<ConstructorSignatureAndPropertiesMapping>> to Define the mapping between the constructors' signatures and the properties
+	and then follow the same steps. E.g.:
+
+%{include|source=src/test/java/org/outsideMyBox/testUtils/examples/ExampleTest.java|id=snippet2|show-gutter=false}

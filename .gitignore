@@ -1,0 +1,11 @@
+*~
+*.class
+.classpath
+.directory
+.pmd
+.project
+.ruleset
+.settings/
+target/
+/.TODO
+
