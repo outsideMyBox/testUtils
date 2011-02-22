@@ -44,6 +44,7 @@ import java.util.Set;
  * can be automatic tested from a map of default and non default property/value.
  */
 public final class BeanLikeTester {
+	
 	// ------------------------------------  Class variables  ----------------------------------------
 
 	/** Convenient class to define a list of property names with their corresponding value. */
@@ -69,6 +70,7 @@ public final class BeanLikeTester {
 	}
 
 	private static final ConstructorSignatureAndPropertiesMapping NOARG_SIGNATUREANDPROPS = new ConstructorSignatureAndPropertiesMapping();
+
 	static {
 		NOARG_SIGNATUREANDPROPS.put(Collections.<Class<?>> emptyList(), Collections.<String> emptyList());
 	}
@@ -81,6 +83,7 @@ public final class BeanLikeTester {
 	}
 
 	// -----------------------------------  Instance variables  ------------------------------------
+
 	private final Class<?>                                 beanLikeClass;
 	private final ConstructorSignatureAndPropertiesMapping constructorsSignaturesAndProperties;
 	private final Set<String>                              gettablePropertyNames;
