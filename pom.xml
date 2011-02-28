@@ -3,7 +3,7 @@
 	<groupId>org.outsideMyBox</groupId>
 	<artifactId>testUtils</artifactId>
 	<name>testUtils</name>
-	<version>0.1.0</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<description>Test utilities</description>
 
