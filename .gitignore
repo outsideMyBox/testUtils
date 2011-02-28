@@ -6,6 +6,11 @@
 .project
 .ruleset
 .settings/
-target/
 /.TODO
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.tag
+bin/
+release.properties
+target/
 
