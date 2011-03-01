@@ -1,0 +1,12 @@
+Maven
+
+   Add this dependency to your project:
+
++---
+   <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.name}</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+   </dependency>
++---
