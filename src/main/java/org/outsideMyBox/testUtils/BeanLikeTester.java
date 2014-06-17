@@ -15,6 +15,7 @@
  */
 package org.outsideMyBox.testUtils;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.text.MessageFormat;
@@ -248,7 +249,24 @@ public final class BeanLikeTester {
 		return Character.toLowerCase(propertyName.charAt(0)) + propertyName.substring(1);
 	}
 
+	private static Object[] createArrayFromArrayObject(Object o) {
+		if(!o.getClass().getComponentType().isPrimitive())
+			return (Object[])o;
+
+		int arrayLength = Array.getLength(o);
+		Object elements[] = new Object[arrayLength];
+		for(int i = 0; i < arrayLength; i++){
+			elements[i] = Array.get(o, i);
+		}
+		return elements;
+	}
+
 	private static boolean areValuesDifferent(Object value1, Object value2) {
+		if ((value1 !=null) && (value2 != null) && (value1.getClass().isArray()) && (value2.getClass().isArray())) {
+			final Object[] array1 = createArrayFromArrayObject(value1);
+			final Object[] array2 = createArrayFromArrayObject(value2);
+			return !Arrays.deepEquals(array1, array2);
+		}
 		final boolean conditionToFail1 = (value1 != null) && ((value2 == null) || !value1.equals(value2));
 		final boolean conditionToFail2 = (value2 != null) && ((value1 == null) || !value2.equals(value1));
 		return conditionToFail1 || conditionToFail2;

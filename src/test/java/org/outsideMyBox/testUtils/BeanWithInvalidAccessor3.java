@@ -28,6 +28,10 @@ public final class BeanWithInvalidAccessor3 {
 	private Integer       anInteger;
 	private boolean       aBooleanPrimitive;
 	private Boolean       aBoolean;
+	private String[]      anArray;
+	private int[]         anArrayOfPrimitives;
+	private String[]      anArrayWithValues = new String[] {"default1", "default2", "default3"};
+
 	private final Integer aReadOnlyProperty       = Integer.MAX_VALUE; // get only.
 	private final Integer anotherReadOnlyProperty = null;             // get only.
 
@@ -86,6 +90,18 @@ public final class BeanWithInvalidAccessor3 {
 	public void setABoolean(Boolean boolean1) {
 		aBoolean = boolean1;
 	}
+
+	public void setAnArray(String[] array) { anArray = array; }
+
+	public String[] getAnArray() { return anArray; }
+
+	public void setAnArrayOfPrimitives(int[] array) { anArrayOfPrimitives = array; }
+
+	public int[] getAnArrayOfPrimitives() { return anArrayOfPrimitives; }
+
+	public void setAnArrayWithValues(String[] array) { anArrayWithValues = array; }
+
+	public String[] getAnArrayWithValues() { return anArrayWithValues; }
 
 	public Integer getAReadOnlyProperty() {
 		return aReadOnlyProperty;

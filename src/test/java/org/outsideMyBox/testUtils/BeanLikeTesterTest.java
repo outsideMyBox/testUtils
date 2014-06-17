@@ -42,6 +42,9 @@ public final class BeanLikeTesterTest {
 		defaultValues.put("anInt", 0);
 		defaultValues.put("anInteger", null);
 		defaultValues.put("aBoolean", null);
+		defaultValues.put("anArray", null);
+		defaultValues.put("anArrayOfPrimitives", null);
+		defaultValues.put("anArrayWithValues", new String[] {"default1", "default2", "default3"});
 		defaultValues.put("aBooleanPrimitive", false);
 		defaultValues.put("aReadOnlyProperty", Integer.MAX_VALUE);
 		defaultValues.put("anotherReadOnlyProperty", null);
@@ -56,6 +59,9 @@ public final class BeanLikeTesterTest {
 		values.put("anInt", 10);
 		values.put("anInteger", 11);
 		values.put("aBoolean", Boolean.FALSE);
+		values.put("anArray", new String[] {"new A", "new B", "new C"});
+		values.put("anArrayOfPrimitives", new int[] {1, 2, 3});
+		values.put("anArrayWithValues", new String[] {"new 1", "new 2", "new 3"});
 		values.put("aBooleanPrimitive", true);
 		// 'aReadOnlyProperty' and 'anotherReadOnlyProperty' are read only property and
 		// hence not set here.
@@ -70,6 +76,9 @@ public final class BeanLikeTesterTest {
 		values.put("anInt", -10);
 		values.put("anInteger", -11);
 		values.put("aBoolean", Boolean.TRUE);
+		values.put("anArray", new String[] {"other A", "other B", "other C"});
+		values.put("anArrayOfPrimitives", new int[] {100, 200, 300});
+		values.put("anArrayWithValues", new String[] {"other 1", "other 2", "other 3"});
 		values.put("aBooleanPrimitive", true);
 		return values;
 	}

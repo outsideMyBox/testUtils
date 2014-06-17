@@ -5,6 +5,9 @@
 .pmd
 .project
 .ruleset
+.idea/
+.idea/codeStyleSettings.xml
+*.iml
 .settings/
 /.TODO
 pom.xml.next
