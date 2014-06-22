@@ -6,12 +6,12 @@
     <link>http://outsideMyBox.github.com/testUtils/</link>
     <description>testUtils - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2011</copyright>
+    <copyright>&#169;2014</copyright>
     <item>
       <title>File: 3,
              Errors: 0,
-             Warnings: 0,
-             Infos: 14
+             Warnings: 9,
+             Infos: 15
       </title>
             <link>http://outsideMyBox.github.com/testUtils//checkstyle.html</link>
       <description>
@@ -60,10 +60,10 @@
                   <a href="http://outsideMyBox.github.com/testUtils//checkstyle.html#org.outsideMyBox.testUtils.BeanLikeTester.java">org/outsideMyBox/testUtils/BeanLikeTester.java</a>
                 </td>
                 <td>
-                  14
+                  15
                 </td>
                 <td>
-                  0
+                  9
                 </td>
                 <td>
                   0

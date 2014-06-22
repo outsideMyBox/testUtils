@@ -1,26 +1,24 @@
 -classpath
-'/home/franck/projects/testUtils/target/checkout/target/classes'
+'/home/franck/projects/testUtils/target/classes'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/home/franck/projects/testUtils/target/checkout/src/main/java'
+'/home/franck/projects/testUtils/src/main/java'
 -author
 -bottom
-'Copyright &#169; 2011. All Rights Reserved.'
+'Copyright &#169; 2014. All Rights Reserved.'
 -charset
 'UTF-8'
 -d
-'/home/franck/projects/testUtils/target/checkout/target/site/apidocs'
+'/home/franck/projects/testUtils/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'testUtils 0.1.1 API'
--link
-'http://download.oracle.com/javase/1.6/docs/api'
+'testUtils 0.1.3 API'
 -link
 'http://java.sun.com/javase/6/docs/api'
 -use
 -version
 -windowtitle
-'testUtils 0.1.1 API'
+'testUtils 0.1.3 API'
