@@ -33,7 +33,6 @@ public class MyBean {
 		int result = 1;
 		result = prime * result + ((property1 == null) ? 0 : property1.hashCode());
 		result = prime * result + (property2 ? 1231 : 1237);
-		result = prime * result + (int) (property3 ^ (property3 >>> 32));
 		return result;
 	}
 
