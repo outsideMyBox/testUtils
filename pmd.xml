@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2014-06-22T19:45:50.038">
-<file name="/home/franck/projects/testUtils/src/main/java/org/outsideMyBox/testUtils/BeanLikeTester.java">
+<pmd version="4.2.5" timestamp="2014-06-23T07:08:09.594">
+<file name="/home/franck/projects/testUtils/target/checkout/src/main/java/org/outsideMyBox/testUtils/BeanLikeTester.java">
 <violation beginline="253" endline="254" begincolumn="17" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="org.outsideMyBox.testUtils" class="BeanLikeTester" method="createArrayFromArrayObject" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
 Avoid using if statements without curly braces
 </violation>

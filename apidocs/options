@@ -1,17 +1,17 @@
 -classpath
-'/home/franck/projects/testUtils/target/classes'
+'/home/franck/projects/testUtils/target/checkout/target/classes'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/home/franck/projects/testUtils/src/main/java'
+'/home/franck/projects/testUtils/target/checkout/src/main/java'
 -author
 -bottom
 'Copyright &#169; 2014. All Rights Reserved.'
 -charset
 'UTF-8'
 -d
-'/home/franck/projects/testUtils/target/site/apidocs'
+'/home/franck/projects/testUtils/target/checkout/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
